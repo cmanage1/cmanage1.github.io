@@ -1,73 +1,105 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
+    "name": "Chethin Manage",
+    "label": "Software Developer",
     "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "email": "chethin.mange@gmail.com",
+    "phone": "(647) 871-3403",
+    "url": "https://www.cmanage.dev/",
+    "summary": "Software Developer, specialized in Machine Learning",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
+      "address": "",
+      "postalCode": "",
+      "city": "Toronto",
+      "countryCode": "CA",
+      "region": "Ontario"
     },
     "profiles": [
       {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
+        "network": "Github",
+        "username": "cmanage1",
+        "url": "https://github.com/cmanage1"
       }
     ]
   },
   "work": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
+      "name": "University of Ottawa, IT Web Services",
+      "position": "Jr. Systems Developer",
+      "url": "https://www.uottawa.ca/about-us/information-technology",
+      "startDate": "2023-01-01",
+      "endDate": "2023-04-31",
+      "summary": "Server-side software development w/ Node.js and Express.",
       "highlights": [
-        "Relativity"
+        "Helped Launch an MFA Reset service to 50,000 users",
+        "Assisted in the migration of 315 uottawa.ca subdomains"
       ]
+    },
+    {
+      "name": "Macadamian Technologies:",
+      "position": "Jr. Software Developer",
+      "url": "https://www.emids.com/offerings/platforms/healthconnect/inq-digital-front-door/",
+      "startDate": "2022-01-01",
+      "endDate": "2022-04-31",
+      "summary": "Cleint-side software development w/ React and TypeScript.",
+      "highlights": [
+        "Propelled the platform's review scores by 20% and later led to an acquisition by Emids",
+        "Designed and lauched a message notification feature using Twilio and MUI"
+      ]
+    },
+    {
+      "name": "CBN Co. Lotteries",
+      "position": "Jr. Systems Developer",
+      "url": "https://www.cbnco.com/lottery-and-gaming/",
+      "startDate": "2021-05-01",
+      "endDate": "2021-12-31",
+      "summary": "Server-side software development w/ Python and Flask.",
+      "highlights": [
+        "Engineered a REST API using Python and Flask for Transport Layer Security (TLS)",
+        "Reduced server resources by 3x compared to the previous SOAP API implementation"
+      ]
+    },
+    {
+      "name": "University of Ottawa, Department of Family Medicine",
+      "position": "Jr. Software Engineer",
+      "url": "https://www.cbnco.com/lottery-and-gaming/",
+      "startDate": "2020-09-01",
+      "endDate": "2021-04-31",
+      "summary": "Client-side software development w/ React and JavaScript.",
+      "highlights": []
     }
   ],
   "volunteer": [],
   "education": [
     {
-      "institution": "University of Zurich, Zurich, Switzerland",
+      "institution": "University of Ottawa, Ottawa, Canada",
       "url": "https://www.uzh.ch/",
-      "area": "Software Development",
-      "studyType": "PhD",
-      "startDate": "1905-01-01",
-      "endDate": "1905-01-01",
+      "area": "Major Computer Science, Minor Psychology",
+      "studyType": "BSc",
+      "startDate": "2018-09-01",
+      "endDate": "2023-04-31",
       "score": "",
       "courses": [
-        "Theory of Relativity"
+        "Intro. to Artificial Intelligence", 
+        "Design and Analysis of Algorithms", 
+        "WWW Structures, Techniques and Standards",
+        "Probablity and Statistics for Engineers",
+        "Engineering Computation (C/C++)",
+        "..."
       ]
     }
   ],
-  "awards": [
-    {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
-    }
-  ],
+  "awards": [],
   "certificates": [],
   "publications": [],
   "skills": [],
   "languages": [
     {
-      "language": "German",
+      "language": "English",
       "fluency": "Native speaker"
     },
     {
-      "language": "English",
+      "language": "Sinhala",
       "fluency": "Fluent"
     }
   ],
