@@ -2,14 +2,14 @@
 layout: about
 title: about
 permalink: /
-subtitle: 
+subtitle: Toronto, Ontario, Canada
 
 profile:
   align: right
-  image: portfolio-main.jpg
-  image_circular: false # crops the image to make it circular
+  image: SummitHeadshot23_50res.png
+  image_circular: true # crops the image to make it circular
   address: >
-    <p>Toronto, Ontario, Canada</p>
+    <p>Software Developer, specialized in Machine Learning</p>
 
 news: false  # includes a list of news items
 latest_posts: false  # includes a list of the newest posts
@@ -17,7 +17,7 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-🇨🇦 i'm a full-stack developer based in Toronto with honours BSc. in computer science.
+🇨🇦 i'm a software developer based in Toronto with honours BSc. in computer science.
 
 🐍 i have significant experience building UIs with React and developing complex Python servers.
 
@@ -29,7 +29,7 @@ social: true  # includes social icons at the bottom of the page
 
 💻 i'm currently ...
 
-- searching for full-stack developer positions in Toronto
+- searching for software developer positions in Toronto
 
 - learning about Deep Neural Networks @ Stanford online
 
