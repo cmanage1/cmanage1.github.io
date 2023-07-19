@@ -73,7 +73,7 @@
   "education": [
     {
       "institution": "University of Ottawa, Ottawa, Canada",
-      "url": "https://www.uzh.ch/",
+      "url": "https://www.uottawa.ca/faculty-engineering/undergraduate-studies/programs/computer-science",
       "area": "Major Computer Science, Minor Psychology",
       "studyType": "BSc",
       "startDate": "2018-09-01",
@@ -90,7 +90,11 @@
     }
   ],
   "awards": [],
-  "certificates": [],
+  "certificates": [
+    {
+      "institution": "Amazon Web Services (AWS)",
+    }
+  ],
   "publications": [],
   "skills": [],
   "languages": [
