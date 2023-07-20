@@ -6,7 +6,7 @@ subtitle: Toronto, Ontario, Canada
 
 profile:
   align: right
-  image: portfolio-main.jpg
+  image: computer_pic.jpg
   image_circular: false # crops the image to make it circular
   address: >
     <p>Software Developer, specialized in Machine Learning</p>
