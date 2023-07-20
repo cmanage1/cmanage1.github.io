@@ -73,7 +73,7 @@
   "education": [
     {
       "institution": "University of Ottawa, Ottawa, Canada",
-      "url": "https://www.uzh.ch/",
+      "url": "https://www.uottawa.ca/faculty-engineering/undergraduate-studies/programs/computer-science",
       "area": "Major Computer Science, Minor Psychology",
       "studyType": "BSc",
       "startDate": "2018-09-01",
@@ -84,13 +84,25 @@
         "Design and Analysis of Algorithms", 
         "WWW Structures, Techniques and Standards",
         "Probablity and Statistics for Engineers",
-        "Engineering Computation (C/C++)",
-        "..."
+        "Engineering Computation (C/C++)"
       ]
     }
   ],
   "awards": [],
-  "certificates": [],
+  "certificates": [
+    {
+      "name": "AWS Certified Cloud Practitioner",
+      "url": " https://www.credly.com/badges/769828b3-2a20-47ad-9688-0604e161a6ae/linked_in_profile",
+      "issuer": "Amazon Web Services (AWS)",
+      "date": "2023-06-18"
+    },
+    {
+      "name": "Supervised Machine Learning",
+      "url": " https://coursera.org/share/62d30f634c1c9fc1cf3cd7a469fcbe74",
+      "issuer": "Stanford University",
+      "date": "2023-05-23"
+    }
+  ],
   "publications": [],
   "skills": [],
   "languages": [
