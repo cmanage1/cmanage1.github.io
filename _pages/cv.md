@@ -4,6 +4,6 @@ permalink: /cv/
 title: resume
 nav: true
 nav_order: 4
-cv_pdf: Chethin_WD.pdf
+cv_pdf: Chethin_Resume.pdf
 description: My Resume/CV.
 ---
