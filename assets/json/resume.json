@@ -6,7 +6,7 @@
     "email": "chethin.mange@gmail.com",
     "phone": "(647) 871-3403",
     "url": "https://www.cmanage.dev/",
-    "summary": "Software Developer, specialized in Machine Learning",
+    "summary": "Software Developer, specialized in Python & React",
     "location": {
       "address": "",
       "postalCode": "",
@@ -97,10 +97,10 @@
       "date": "2023-06-18"
     },
     {
-      "name": "Supervised Machine Learning",
-      "url": " https://coursera.org/share/62d30f634c1c9fc1cf3cd7a469fcbe74",
-      "issuer": "Stanford University",
-      "date": "2023-05-23"
+      "name": "Machine Learning Specialization",
+      "url": "https://coursera.org/share/4d2270636743025298bb6492e027c09d",
+      "issuer": "Stanford University, DeepLearning.ai",
+      "date": "2023-11-26"
     }
   ],
   "publications": [],
