@@ -29,8 +29,8 @@ social: true  # includes social icons at the bottom of the page
 
 💻 i'm currently ...
 
-- searching for software developer positions in Toronto
+- learning aws cloud
 
-- developing full stack e-commerce tools
+- contributing to open source
 
 <br/><br/><br/>
