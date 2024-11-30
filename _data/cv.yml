@@ -2,31 +2,23 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
+      value: Chethin Manage
     - name: Languages
-      value: English, German
+      value: English, Sinhalese
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: M.Sc.
+      institution: Georgia Institute of Technology, Atlanta, United States of America
+      year: 2025-
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+        - Specialized in computing systems.
+    - title: B.Sc.
+      institution: University of Ottawa, Ottawa, Canada
       description:
-        - Description 1.
-        - Description 2.
+        - Specialized in Software Engineering
+        - Minored in Psychology
 
 - title: Experience
   type: time_table
@@ -57,9 +49,9 @@
       year: 1911 - 1917
       description:
 
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
+    - title: Software Engineer Intern
+      institution: University of Ottawa, Ottawa, Canada
+      year: 2020/08 - 2021/04
 
 - title: Open Source Projects
   type: time_table
@@ -68,30 +60,14 @@
       year: 2015-now
       description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
 
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - year: 1921
-      items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
-      items:
-        - Max Planck Medal
-
 - title: Academic Interests
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: Distributed Systems.
       items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
+        - Specifically mult-threading.
 
 - title: Other Interests
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - <u>Hobbies:</u> Coding :) 
