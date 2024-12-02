@@ -1,4 +1,3 @@
-
 repo_description_lines_max: 2
 
 repo_trophies: disabled
@@ -10,5 +9,3 @@ github_repos:
   - kaernlab/BioProtocols
   - cmanage1/CS-GO-Win-Predictor
   - cmanage1/lm-genie
-
-
