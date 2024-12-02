@@ -18,7 +18,7 @@ social: true # includes social icons at the bottom of the page
 
 <br>
 
-a senior software developer at ATB's Innovation Lab, [ATB Ventures](https://atbventures.com/).
+senior software developer at ATB's Innovation Lab, [ATB Ventures](https://atbventures.com/).
 
 graduate student @ [Georgia Tech](https://www.cc.gatech.edu/) CS 🐝.
 
