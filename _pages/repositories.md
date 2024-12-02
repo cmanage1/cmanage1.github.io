@@ -8,7 +8,8 @@ nav_order: 4
 ---
 
 {% if site.data.repositories.github_users %}
-  - cmanage1/CS-GO-Win-Predictor
+
+- cmanage1/CS-GO-Win-Predictor
 
 ## GitHub users
 

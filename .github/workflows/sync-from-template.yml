@@ -12,14 +12,14 @@ jobs:
       contents: write
       pull-requests: write
       actions: write
-      
+
     steps:
       # To use this repository's private action, you must check out the repository
       - name: Checkout
         uses: actions/checkout@v4
         with: #### This with: token: part is what fixed it for me ####
           token: ${{ secrets.ACTIONS_TOKEN }}
-          
+
       - name: actions-template-sync
         uses: AndreasAugustin/actions-template-sync@v2
         with:
