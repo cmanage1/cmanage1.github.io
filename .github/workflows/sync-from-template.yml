@@ -25,5 +25,5 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           source_repo_path: alshedivat/al-folio
-          upstream_branch: <target_branch> # defaults to main
+          upstream_branch: main # defaults to main
           pr_labels: <label1>,<label2>[,...] # optional, no default
