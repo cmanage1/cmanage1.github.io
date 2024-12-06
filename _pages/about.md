@@ -22,7 +22,7 @@ senior software developer at ATB's Innovation Lab, [ATB Ventures](https://atbven
 
 graduate student @ [Georgia Tech](https://www.cc.gatech.edu/) CS 🐝.
 
-worked with a bunch of tech (go, svn, ruby, unix) but specialized in python 🐍 and react.
+worked with a bunch of tech (go, git, ruby, unix) but specialized in python 🐍 and react.
 
 mostly a generalist 👷, i just like solving problems!
 
