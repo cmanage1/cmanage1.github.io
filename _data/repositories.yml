@@ -1,11 +1,14 @@
+github_users:
+  - torvalds
+  - alshedivat
+
 repo_description_lines_max: 2
 
-repo_trophies: disabled
-
 github_repos:
-  - cmanage1/shelf-it
-  - cmanage1/ufc-fight-predictor
-  - cmanage1/youtube-summarizer
-  - kaernlab/BioProtocols
-  - cmanage1/CS-GO-Win-Predictor
-  - cmanage1/lm-genie
+  - alshedivat/al-folio
+  - jekyll/jekyll
+  - twbs/bootstrap
+  - jquery/jquery
+  - FortAwesome/Font-Awesome
+  - mathjax/MathJax
+  - jpswalsh/academicons
