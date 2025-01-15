@@ -24,7 +24,7 @@
   },
   "education": [
     {
-      "institution": "Georgia Institute of Technology, Atlanta, United States of America",
+      "institution": "Georgia Institute of Technology, Atlanta, Georgia, USA",
       "url": "https://www.cc.gatech.edu/",
       "area": "Computer Science",
       "studyType": "M.Sc.",
@@ -45,7 +45,7 @@
         "Intro. to Artificial Intelligence",
         "Design and Analysis of Algorithms",
         "WWW Structures, Techniques and Standards",
-        "Probablity and Statistics for Engineers",
+        "Probability and Statistics for Engineers",
         "Engineering Computation (C/C++)"
       ]
     }
@@ -57,7 +57,7 @@
       "url": "https://www.atbventures.com/",
       "startDate": "2024-10-07",
       "endDate": "",
-      "summary": "Innovating the future of Canadian FinTech through New Product Innovation",
+      "summary": "Innovating the future of Canadian FinTech through New Product Ventures",
       "highlights": []
     },
     {
@@ -66,7 +66,7 @@
       "url": "https://www.symcor.ca/",
       "startDate": "2023-09-11",
       "endDate": "2024-09-26",
-      "summary": "Maintain and improve the platforms and code for CCS Post Composition",
+      "summary": "Maintain and improve the platforms and code for CCX Post Composition",
       "highlights": [
         "Helped migrate legacy systems using SVN and Capistrano to Git and Ansible Automation Platform",
         "Onboarded new applications for the main platform using Python, Linux, SQL"
@@ -87,10 +87,10 @@
       "url": "https://www.emids.com/offerings/platforms/healthconnect/inq-digital-front-door/",
       "startDate": "2022-01-01",
       "endDate": "2022-04-31",
-      "summary": "Cleint-side software development w/ React and TypeScript.",
+      "summary": "Client-side software development w/ React and TypeScript.",
       "highlights": [
         "Propelled the platform's review scores by 20% and later led to an acquisition by Emids",
-        "Designed and lauched a message notification feature using Twilio and MUI"
+        "Designed and launched a message notification feature using Twilio and MUI"
       ]
     },
     {
@@ -102,7 +102,7 @@
       "summary": "Server-side software development w/ Python and Flask.",
       "highlights": [
         "Engineered a REST API using Python and Flask for Transport Layer Security (TLS)",
-        "Reduced server resources by 3x compared to the previous SOAP API implementation"
+        "Reduced server compute resources by 3x compared to the previous SOAP API implementation using Redis caching"
       ]
     },
     {
