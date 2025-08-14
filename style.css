@@ -1,0 +1,215 @@
+/*
+  Minimal, pleasant typography + layout for a personal portfolio.
+  Uses a comfortable reading width, soft colors, and subtle shadows.
+*/
+
+:root {
+  --bg: #ffffff;
+  --text: #111318;
+  --muted: #6b7280;
+  --accent: #7c3aed; /* soft purple */
+  --card: #f7f7fb;
+  --border: #e6e7ee;
+  --strong: #0b0c10;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter,
+    Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.6;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.container {
+  max-width: 1100px;
+  padding: 32px 24px 56px;
+  margin: 0 auto;
+}
+
+.site-header h1 {
+  font-size: 46px;
+  letter-spacing: -0.02em;
+  margin: 0 0 4px 0;
+}
+
+.site-header .emph { font-weight: 800; }
+
+.site-header .lede {
+  margin: 0 0 28px 0;
+  color: var(--muted);
+}
+
+.site-footer {
+  margin-top: 40px;
+  border-top: 1px solid var(--border);
+  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(17,19,24,0.02) 100%);
+}
+
+.site-footer .container { padding: 28px 24px 40px; }
+
+.site-footer .lede {
+  margin: 0;
+  color: var(--muted);
+  text-align: center;
+  font-size: 14px;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 40px;
+}
+
+/* Content */
+.content { }
+
+.intro p { margin: 0 0 14px 0; }
+
+.publications h2, .experience h2, .education h2 {
+  font-size: 22px;
+  margin: 28px 0 14px 0;
+  font-weight: 700;
+}
+
+.pub-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--border);
+}
+
+.pub-list li {
+  display: grid;
+  grid-template-columns: 84px 1fr;
+  gap: 16px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.pub-date { color: var(--muted); font-variant-numeric: tabular-nums; }
+
+.pub-title { color: var(--text); }
+.pub-title:hover { color: var(--accent); }
+
+/* Experience */
+.experience-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--border);
+}
+
+.experience-list > li { border-bottom: 1px solid var(--border); }
+
+.experience-list summary {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 16px;
+  padding: 14px 0;
+  cursor: pointer;
+  align-items: baseline;
+}
+
+.experience-list summary::-webkit-details-marker { display: none; }
+
+.experience-date { color: var(--muted); font-variant-numeric: tabular-nums; }
+.experience-title { color: var(--strong); font-weight: 600; }
+
+.experience-list details[open] summary .experience-title { color: var(--accent); }
+
+.exp-details {
+  padding: 0 0 14px 0;
+}
+
+.exp-details ul { margin: 0; padding-left: 18px; color: var(--text); }
+.exp-details li { margin: 6px 0; }
+
+/* Education */
+.education-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--border);
+}
+
+.education-list li {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 16px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.education-date { color: var(--muted); font-variant-numeric: tabular-nums; }
+.education-title { color: var(--text); }
+
+/* Sidebar */
+.sidebar {
+  position: sticky;
+  top: 24px;
+  align-self: start;
+}
+
+.profile-pic {
+  width: 100%;
+  border-radius: 8px;
+  background: var(--card);
+  box-shadow: 0 6px 16px rgba(17,19,24,0.08);
+  display: block;
+}
+
+.contact {
+  margin-top: 14px;
+  color: var(--text);
+  font-style: normal;
+}
+
+.contact div { margin: 2px 0; }
+
+/* Social icons */
+.social-icons {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 10px;
+  background: #000; /* solid glyph tile like reference */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+
+.icon:hover { transform: translateY(-1px); box-shadow: 0 10px 20px rgba(0,0,0,0.18); background: var(--accent); }
+
+.icon .glyph { width: 36px; height: 36px; fill: currentColor; display: block; }
+
+.icon .monogram {
+  font-weight: 800;
+  font-size: 24px;
+  letter-spacing: -0.02em;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Helvetica, Arial;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .layout { grid-template-columns: 1fr; }
+  .sidebar { position: static; }
+  .experience-list summary, .education-list li, .pub-list li { grid-template-columns: 92px 1fr; }
+}
