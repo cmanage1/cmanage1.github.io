@@ -13,6 +13,17 @@
   --strong: #0b0c10;
 }
 
+/* Dark theme variables */
+[data-theme="dark"] {
+  --bg: #0b0d12;
+  --text: #e5e7eb;
+  --muted: #9aa0aa;
+  --accent: #a78bfa;
+  --card: #12151d;
+  --border: #1f2430;
+  --strong: #ffffff;
+}
+
 * { box-sizing: border-box; }
 
 html, body {
@@ -50,7 +61,7 @@ a:hover { text-decoration: underline; }
 .site-footer {
   margin-top: 40px;
   border-top: 1px solid var(--border);
-  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(17,19,24,0.02) 100%);
+  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(17,19,24,0.06) 100%);
 }
 
 .site-footer .container { padding: 28px 24px 40px; }
@@ -69,7 +80,6 @@ a:hover { text-decoration: underline; }
 }
 
 /* Content */
-.content { }
 
 .intro p { margin: 0 0 14px 0; }
 
@@ -97,7 +107,8 @@ a:hover { text-decoration: underline; }
 .pub-date { color: var(--muted); font-variant-numeric: tabular-nums; }
 
 .pub-title { color: var(--text); }
-.pub-title:hover { color: var(--accent); }
+.pub-title a { color: var(--accent); }
+.pub-title a:hover { color: var(--accent); }
 
 /* Experience */
 .experience-list {
@@ -213,3 +224,37 @@ a:hover { text-decoration: underline; }
   .sidebar { position: static; }
   .experience-list summary, .education-list li, .pub-list li { grid-template-columns: 92px 1fr; }
 }
+
+/* Theme toggle button */
+.theme-toggle {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border);
+  background: var(--card);
+  color: var(--text);
+  cursor: pointer;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.10);
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.theme-toggle:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.14);
+}
+
+.theme-toggle .icon-sun,
+.theme-toggle .icon-moon {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+[data-theme="light"] .theme-toggle .icon-sun { opacity: 1; }
+[data-theme="dark"] .theme-toggle .icon-moon { opacity: 1; }
