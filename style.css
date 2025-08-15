@@ -249,12 +249,14 @@ a:hover { text-decoration: underline; }
   box-shadow: 0 10px 20px rgba(0,0,0,0.14);
 }
 
-.theme-toggle .icon-sun,
-.theme-toggle .icon-moon {
-  position: absolute;
-  opacity: 0;
-  transition: opacity 0.2s ease;
-}
+.theme-toggle svg { display: none; }
+[data-theme="light"] .theme-toggle .icon-sun { display: block; }
+[data-theme="dark"] .theme-toggle .icon-moon { display: block; }
 
-[data-theme="light"] .theme-toggle .icon-sun { opacity: 1; }
-[data-theme="dark"] .theme-toggle .icon-moon { opacity: 1; }
+/* Fallback: if no explicit theme set, respect system preference */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) .theme-toggle .icon-moon { display: block; }
+}
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme]) .theme-toggle .icon-sun { display: block; }
+}
