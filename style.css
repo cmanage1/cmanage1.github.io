@@ -233,7 +233,10 @@ a:hover { text-decoration: underline; }
   transition: color 0.15s ease;
 }
 
-.icon:hover { color: var(--accent); }
+.icon:hover { 
+  color: var(--accent); 
+  text-decoration: none;
+}
 
 .icon .glyph {
   display: inline-block;
