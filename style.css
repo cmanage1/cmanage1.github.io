@@ -15,7 +15,7 @@
 
 /* Dark theme variables */
 [data-theme="dark"] {
-  --bg: #0b0d12;
+  --bg: #1c1c1c;
   --text: #e5e7eb;
   --muted: #9aa0aa;
   --accent: #a78bfa;
@@ -31,8 +31,7 @@ html, body {
   padding: 0;
   background: var(--bg);
   color: var(--text);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter,
-    Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family:"Roboto", sans-serif;
   line-height: 1.6;
 }
 
@@ -40,31 +39,34 @@ a { color: var(--accent); text-decoration: none; }
 a:hover { text-decoration: underline; }
 
 .container {
-  max-width: 1100px;
-  padding: 32px 24px 56px;
+  max-width: 1000px;
+  padding: 64px 24px 72px 24px;
   margin: 0 auto;
 }
 
 .site-header h1 {
   font-size: 46px;
   letter-spacing: -0.02em;
-  margin: 0 0 4px 0;
+  margin: 0 0 8px 0;
+  font-weight: 200; /* keep heading normal so only .emph is bold */
 }
 
 .site-header .emph { font-weight: 800; }
 
 .site-header .lede {
-  margin: 0 0 28px 0;
+  margin: 0 0 40px 0;
   color: var(--muted);
+  font-style: italic;
+  font-size: 18px;
 }
 
 .site-footer {
-  margin-top: 40px;
+  margin-top: 64px;
   border-top: 1px solid var(--border);
   background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(17,19,24,0.06) 100%);
 }
 
-.site-footer .container { padding: 28px 24px 40px; }
+.site-footer .container { padding: 36px 24px 48px; }
 
 .site-footer .lede {
   margin: 0;
@@ -76,17 +78,17 @@ a:hover { text-decoration: underline; }
 .layout {
   display: grid;
   grid-template-columns: 1fr 340px;
-  gap: 40px;
+  gap: 56px;
   grid-template-areas: 'content sidebar';
 }
 
 /* Content */
 
-.intro p { margin: 0 0 14px 0; }
+.intro p { margin: 0 0 18px 0; }
 
 .publications h2, .experience h2, .education h2 {
   font-size: 22px;
-  margin: 28px 0 14px 0;
+  margin: 36px 0 16px 0;
   font-weight: 700;
 }
 
@@ -100,8 +102,8 @@ a:hover { text-decoration: underline; }
 .pub-list li {
   display: grid;
   grid-template-columns: 84px 1fr;
-  gap: 16px;
-  padding: 14px 0;
+  gap: 20px;
+  padding: 16px 0;
   border-bottom: 1px solid var(--border);
 }
 
@@ -125,8 +127,8 @@ a:hover { text-decoration: underline; }
   list-style: none;
   display: grid;
   grid-template-columns: 120px 1fr;
-  gap: 16px;
-  padding: 14px 0;
+  gap: 20px;
+  padding: 16px 0;
   cursor: pointer;
   align-items: baseline;
 }
@@ -139,11 +141,11 @@ a:hover { text-decoration: underline; }
 .experience-list details[open] summary .experience-title { color: var(--accent); }
 
 .exp-details {
-  padding: 0 0 14px 0;
+  padding: 0 0 18px 0;
 }
 
 .exp-details ul { margin: 0; padding-left: 18px; color: var(--text); }
-.exp-details li { margin: 6px 0; }
+.exp-details li { margin: 8px 0; }
 
 /* Education */
 .education-list {
@@ -156,8 +158,8 @@ a:hover { text-decoration: underline; }
 .education-list li {
   display: grid;
   grid-template-columns: 140px 1fr;
-  gap: 16px;
-  padding: 12px 0;
+  gap: 20px;
+  padding: 14px 0;
   border-bottom: 1px solid var(--border);
 }
 
@@ -168,7 +170,7 @@ a:hover { text-decoration: underline; }
 .sidebar {
   grid-area: sidebar;
   position: sticky;
-  top: 24px;
+  top: 32px;
   align-self: start;
 }
 
@@ -188,30 +190,57 @@ a:hover { text-decoration: underline; }
 
 .contact div { margin: 2px 0; }
 
-/* Social icons */
-.social-icons {
-  display: flex;
-  gap: 12px;
-  margin-top: 10px;
+/* Email row with copy action */
+.email-row {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
 }
 
-.icon {
-  width: 64px;
-  height: 64px;
-  border-radius: 10px;
-  background: #000; /* solid glyph tile like reference */
+.email-link { text-decoration: none; }
+.email-link:hover { text-decoration: none; }
+
+.copy-email {
+  border: 1px solid var(--border);
+  background: var(--card);
+  color: var(--text);
+  border-radius: 8px;
+  width: 32px;
+  height: 32px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
-  text-decoration: none;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
-  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease, transform 0.1s ease;
 }
 
-.icon:hover { transform: translateY(-1px); box-shadow: 0 10px 20px rgba(0,0,0,0.18); background: var(--accent); }
+.copy-email:hover { color: var(--accent); }
+.copy-email:active { transform: scale(0.98); }
 
-.icon .glyph { width: 36px; height: 36px; fill: currentColor; display: block; }
+/* Social icons */
+.social-icons {
+  display: flex;
+  gap: 16px;
+  margin-top: 12px;
+}
+
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.icon:hover { color: var(--accent); }
+
+.icon .glyph {
+  display: inline-block;
+  font-size: 28px; /* FA icon size */
+  line-height: 1;
+  fill: currentColor;
+}
 
 .icon .monogram {
   font-weight: 800;
