@@ -51,7 +51,7 @@ a:hover { text-decoration: underline; }
   font-weight: 200; /* keep heading normal so only .emph is bold */
 }
 
-.site-header .emph { font-weight: 800; }
+.site-header .emph { font-weight: 600; }
 
 .site-header .lede {
   margin: 0 0 40px 0;
