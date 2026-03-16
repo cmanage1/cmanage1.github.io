@@ -48,7 +48,7 @@ a:hover { text-decoration: underline; }
   font-size: 46px;
   letter-spacing: -0.02em;
   margin: 0 0 8px 0;
-  font-weight: 200; /* keep heading normal so only .emph is bold */
+  font-weight: 200;
 }
 
 .site-header .emph { font-weight: 600; }
@@ -86,20 +86,22 @@ a:hover { text-decoration: underline; }
 
 .intro p { margin: 0 0 18px 0; }
 
-.publications h2, .experience h2, .education h2 {
+/* Shared section heading */
+section h2 {
   font-size: 22px;
   margin: 36px 0 16px 0;
   font-weight: 700;
 }
 
-.pub-list {
+/* Dated list — used by publications & certificates */
+.dated-list {
   list-style: none;
   margin: 0;
   padding: 0;
   border-top: 1px solid var(--border);
 }
 
-.pub-list li {
+.dated-list li {
   display: grid;
   grid-template-columns: 84px 1fr;
   gap: 20px;
@@ -107,13 +109,36 @@ a:hover { text-decoration: underline; }
   border-bottom: 1px solid var(--border);
 }
 
-.pub-date { color: var(--muted); font-variant-numeric: tabular-nums; }
+.item-date { color: var(--muted); font-variant-numeric: tabular-nums; }
+.item-title { color: var(--text); }
+.item-title a { color: var(--accent); }
 
-.pub-title { color: var(--text); }
-.pub-title a { color: var(--accent); }
-.pub-title a:hover { color: var(--accent); }
+/* Experience summary dropdown */
+.experience-summary {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0 16px;
+  margin-bottom: 16px;
+  background: var(--card);
+}
 
-/* Experience */
+.experience-summary summary {
+  cursor: pointer;
+  padding: 12px 0;
+  color: var(--muted);
+  font-size: 15px;
+  list-style: none;
+}
+
+.experience-summary summary::-webkit-details-marker { display: none; }
+
+.experience-summary[open] summary { color: var(--accent); }
+
+.experience-summary .exp-details { padding: 0 0 12px 0; }
+.experience-summary .exp-details ul { margin: 0; padding-left: 18px; color: var(--text); font-size: 14px; }
+.experience-summary .exp-details li { margin: 4px 0; }
+
+/* Expandable list — used by experience, co-ops, education */
 .experience-list {
   list-style: none;
   margin: 0;
@@ -126,7 +151,7 @@ a:hover { text-decoration: underline; }
 .experience-list summary {
   list-style: none;
   display: grid;
-  grid-template-columns: 120px 1fr;
+  grid-template-columns: 180px 1fr;
   gap: 20px;
   padding: 16px 0;
   cursor: pointer;
@@ -135,36 +160,14 @@ a:hover { text-decoration: underline; }
 
 .experience-list summary::-webkit-details-marker { display: none; }
 
-.experience-date { color: var(--muted); font-variant-numeric: tabular-nums; }
+.experience-date { color: var(--muted); font-variant-numeric: tabular-nums; font-size: 14px; }
 .experience-title { color: var(--strong); font-weight: 600; }
 
 .experience-list details[open] summary .experience-title { color: var(--accent); }
 
-.exp-details {
-  padding: 0 0 18px 0;
-}
-
+.exp-details { padding: 0 0 18px 0; }
 .exp-details ul { margin: 0; padding-left: 18px; color: var(--text); }
 .exp-details li { margin: 8px 0; }
-
-/* Education */
-.education-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  border-top: 1px solid var(--border);
-}
-
-.education-list li {
-  display: grid;
-  grid-template-columns: 140px 1fr;
-  gap: 20px;
-  padding: 14px 0;
-  border-bottom: 1px solid var(--border);
-}
-
-.education-date { color: var(--muted); font-variant-numeric: tabular-nums; }
-.education-title { color: var(--text); }
 
 /* Sidebar */
 .sidebar {
@@ -189,6 +192,7 @@ a:hover { text-decoration: underline; }
 }
 
 .contact div { margin: 2px 0; }
+.prev-location { color: var(--muted); font-size: 13px; }
 
 /* Email row with copy action */
 .email-row {
@@ -233,23 +237,16 @@ a:hover { text-decoration: underline; }
   transition: color 0.15s ease;
 }
 
-.icon:hover { 
-  color: var(--accent); 
+.icon:hover {
+  color: var(--accent);
   text-decoration: none;
 }
 
 .icon .glyph {
   display: inline-block;
-  font-size: 28px; /* FA icon size */
+  font-size: 28px;
   line-height: 1;
   fill: currentColor;
-}
-
-.icon .monogram {
-  font-weight: 800;
-  font-size: 24px;
-  letter-spacing: -0.02em;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Helvetica, Arial;
 }
 
 /* Responsive */
@@ -261,7 +258,8 @@ a:hover { text-decoration: underline; }
       'content';
   }
   .sidebar { position: static; }
-  .experience-list summary, .education-list li, .pub-list li { grid-template-columns: 92px 1fr; }
+  .experience-list summary { grid-template-columns: 140px 1fr; }
+  .dated-list li { grid-template-columns: 92px 1fr; }
 }
 
 /* Theme toggle button */
